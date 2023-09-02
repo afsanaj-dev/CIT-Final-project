@@ -1,0 +1,51 @@
+@media(max-width:575.98px){
+
+/* ---Header---- */
+    .topbar_info{
+        display: none !important;
+    }
+    .topbar_icon{
+        justify-content: center !important;
+    }
+ /* -----Navbar----- */
+    .logo_img{
+        width: 140px;
+        margin-left: 20px;
+    }
+    .main_menu .navbar-toggler{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        padding: 0;
+        border-radius: 3px;
+        background: #ff7c08;
+        color: #ffffff;
+        margin-right: 20px;
+
+    }
+    .main_menu .navbar-toggler.show {
+        background: #eb0029;
+    }
+   nav .nav_menu{
+    gap:20px;
+    flex-direction: column;
+    background: #ffffff;
+    border-top: 1px solid #ff7c08;
+    align-items: center;
+    }
+    nav .nav_menu .drop_menu{
+        background: #ffffff;
+        left:50px;
+        transform: translateX(-60%);
+    }
+    nav .menu_icon{
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 20px;
+    }
+   
+
+}
+
+

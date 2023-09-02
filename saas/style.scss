@@ -1,0 +1,1660 @@
+// ============Common CSS Starts========
+
+// -----------------Variable Part Start------------
+    //-----color------
+    $colorPrimary: #ff7c08;
+    $colorRed: #eb0029;
+    $paraColor: #484747;
+    $darkblue: #231f40;
+    $colorWhite: #ffffff;
+    // -----Font Family------
+    $paraFont: 'Manrope', sans-serif;
+    $headingFont: 'Barlow', sans-serif;
+    $cursiveFont: 'Oleo Script', cursive;
+    // -----Font weight-----
+    $fontNormal: 400;
+    $fontMedium: 500;
+    $fontSemibold: 600;
+    $fontBold: 700;
+    // -----Font Size-----
+    $navFont: 16px;
+    $paraFSize: 18px;
+    $headSize1: 24px;
+    $headSize2: 35px;
+    // --------Transition------
+    $sec3: all linear 0.3s;
+
+    $boxShadow: rgba(100, 100, 111, 0.15) 0px 7px 29px 0px;
+    // --------------Variable Part End-------------
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+p,a,span{
+    font-size: $navFont;
+    font-weight: $fontNormal;
+    color: $paraColor;
+}
+ul,ol{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    line-height: 0.8px;
+    font-family: $headingFont;
+    color: $darkblue;
+}
+.container{
+    margin: 0 auto;
+}
+// ------common button---------
+button{
+    border: none;
+    box-shadow: none;
+}
+.common_btn{
+    background: $colorPrimary;
+    text-transform: capitalize;
+    color: $colorWhite;
+    padding: 12px 40px;
+    border-radius: 30px;
+    font-size: $paraFSize;
+    font-weight: $fontSemibold;
+    position: relative;
+    transition: all linear .3s;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 24px;
+        background: url(../images/home/arrow_icon.png) no-repeat center/cover;
+        top: 50%;
+        left: 0px;
+        opacity: 0;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        transition: all linear .3s;
+    }
+}
+// ------slick lfet/right arrow button-----
+.left_btn,.right_btn{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: $colorWhite;
+    display: inline-block;
+}
+.left_btn{
+    background-color: $colorPrimary;
+    &:hover{
+        background-color: $darkblue;
+    }
+}
+.right_btn{
+    background-color: $darkblue;
+}
+// ------common heading----------
+.common_heading{
+    h4 {
+        color: $colorPrimary;
+        font-family: $cursiveFont;
+        font-size: $headSize1;
+        font-weight: $fontSemibold;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        position: relative;
+        display: inline-block;
+        &::after {
+            position: absolute;
+            content: "";
+            background: url(../images/home/heading_shapes_1.png) no-repeat center/cover;
+            width: 65px;
+            height: 23px;
+            top: -10px;
+            right: -80px;
+        }
+    }
+    h2{
+        text-transform: capitalize;
+        font-size: $headSize2;
+        font-weight: 800;
+        line-height: 50px;
+    }
+    
+}
+// -------modal design---------
+#cartModal{
+    position: relative;
+    .btn-close{
+        position: absolute;
+        background-color: $colorPrimary;
+        right: 0;
+        top: 0;
+        border-radius: 50%;
+    }
+    .modal_img{
+        border-radius: 10px;
+    }
+    .modal_text{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .title{
+            text-transform: capitalize;
+            color: $darkblue;
+            font-size: 30px;
+            font-family: $headingFont;
+            font-weight: $fontBold;
+            display: block;
+            transition: $sec3;
+        }
+        .rating{
+            color: #ff9933;
+            font-size: 16px;
+            span{
+                font-size: $navFont;
+                font-weight: $fontSemibold;
+                padding-left: 20px;
+            }
+        }
+        .price{
+            font-size: 22px;
+            font-weight: $fontBold;
+            color: $colorPrimary;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            display: flex;
+            gap: 5px;
+            del{
+                color: #736f6f;
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+
+    }
+    label{
+        text-transform: capitalize;
+        color: $colorWhite;
+        font-weight: $fontSemibold;
+        margin-bottom: 5px;
+    }
+    .size_wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+// ============Common CSS Ends========
+
+// ============Header CSS Starts========
+header{
+    background-color: $darkblue;
+    width: 100%;
+    height: 50px;
+    .topbar_info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        width: 100%;
+        height: 89%;
+        background-color: $colorPrimary;
+        clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);  
+        a{
+            color: $colorWhite;
+            font-size: $navFont;
+            font-weight: $fontNormal;
+            font-family: $paraFont;
+            transition: $sec3;
+        }
+    }
+    .topbar_icon{
+        gap:20px;
+        li{
+            margin-top: 10px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 50%; 
+            background-color: $colorPrimary; 
+            font-size: 14px;
+            transition: $sec3;
+            a{
+                padding: 8px;
+                color: $colorWhite; 
+            }
+        }
+    }
+}
+
+// ============Header CSS Ends========
+// ============Navbar CSS Starts========
+nav{
+
+    .navbar-expand-lg {
+        justify-content: flex-start;
+        background: $colorWhite;
+    }
+    .main_menu{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 80px;   
+        border-bottom: 1px solid #eee;
+        z-index: 10;
+        transition: $sec3;
+    }
+    .logo_img{
+        padding-top: 10px;
+        max-width: 170px;
+        height: 70px;
+        cursor: pointer;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+    }
+    .nav_menu{
+        display: flex;
+        gap: 30px;
+        text-transform: capitalize;
+        .nav-link.active{
+            color: $colorPrimary;
+        }
+        .nav-link{
+            font-size: $navFont;
+            font-weight: $fontSemibold;
+            color: $darkblue;
+            padding-bottom: 10px;
+            // margin: 10px 15px;
+            transition: $sec3;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 2px;
+                background: $colorPrimary;
+                top: 40px;
+                left: 50%;
+                opacity: 0;
+                transition: all 0.3s linear 0s;
+                transform: translateX(-50%);
+            }
+           &:hover {
+               color: $colorPrimary;
+               transition: all 0.3s linear 0s;
+            }
+            &:hover::after{
+                opacity: 1;
+                transition: all 0.3s linear 0s;
+            }
+            &:hover .drop_menu{
+                opacity: 1;
+                top: 25px;
+                visibility: visible;
+            }
+
+        }
+        .drop_menu{
+            padding-top: 20px;
+            position: absolute;
+            width: 250px;
+            background: $colorWhite;
+            top: 50px;
+            left: 0%;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(-18%);
+            transition: all linear 0.3s;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            z-index: 50;
+            li a{
+                display: block;
+                text-transform: capitalize;
+                font-size: $navFont;
+                font-weight: $fontMedium;
+                color: $darkblue;
+                position: relative;
+                padding: 0px 15px 10px 10px;
+                border-bottom: 1px solid #eee;
+                transition: all 0.3s linear 0s;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    width: 7px;
+                    height: 7px;
+                    background: $colorPrimary;
+                    top: 10px;
+                    left: -10px;
+                    opacity: 0; 
+                    transition: all 0.3s linear 0s;
+                    // Hover Transition Problem*************
+                }
+                &:hover {
+                    left: 35px;
+                    color: $colorPrimary;
+                    transition: all 0.3s linear 0s;
+                }
+                &:hover::after{
+                    opacity: 1;
+                    z-index: 50;
+                    transition: all 0.3s linear 0s;
+                }
+            }
+           
+        }
+        .dropdown{
+            &:hover .drop_menu{
+                opacity: 1;
+                top: 25px;
+                visibility: visible;
+            }
+        }
+    }
+    .menu_icon{
+        align-items: center;
+        li{
+            position: relative;
+            a{
+                font-size: $navFont;
+                font-weight: $fontSemibold;
+                color: $darkblue;
+                text-transform: capitalize;
+                margin: 0px 10px;
+                padding: 0;
+                cursor: pointer;
+                transition: all linear .3s;
+                
+                i{
+                width: 40px;
+                height: 40px;
+                background: #ff7c0826;
+                text-align: center;
+                line-height: 40px;
+                border-radius: 50%;
+                }
+                span{
+                    position: absolute;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    background: $colorPrimary;
+                    color: $colorWhite;
+                    border: 1px solid $colorWhite;
+                    line-height: 24px;
+                    font-size: 12px;
+                    text-align: center;
+                    font-weight: $fontSemibold;
+                    top: -10px;
+                    right: 0px;
+                }
+                &:hover i{
+                    background-color: $colorPrimary;
+                    color: $colorWhite;
+                    transition: $sec3;
+                }
+            }
+        }
+    }
+}
+// ============Navbar CSS Ends========
+// ============Banner CSS Starts========
+#banner{
+    padding-top: 30px;
+    background: linear-gradient(#231f40c4,rgba(35, 31, 64, 0.77)), url(../images/home/banner_bg.jpg) no-repeat center/cover ;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    .banner_overlay{
+        .banner_shape_1{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 80px;
+            left: 4%;
+            animation: rotate linear 50s infinite;
+            z-index: 1;
+        }
+        .banner_shape_2 {
+            position: absolute;
+            width: 40px;
+            height: 29px;
+            top: 55%;
+            left: 5%;
+            animation: zoom linear 2.5s infinite alternate;
+            z-index: 1;
+        }
+        
+        .banner_shape_3 {
+            position: absolute;
+            width: 25px;
+            height: 33px;
+            top: 15%;
+            right: 48%;
+            z-index: 1;
+            animation: zoom linear 2.5s infinite alternate;
+        }
+        
+        .banner_shape_4 {
+            position: absolute;
+            width: 45px;
+            height: 40px;
+            bottom: 35%;
+            left: 24%;
+            animation: shake linear 2.5s infinite alternate;
+            z-index: 1;
+        }
+        
+        .banner_shape_5 {
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            bottom: 44%;
+            left: 53%;
+            animation: rotate linear 50s infinite;
+            z-index: 1;
+        }
+        
+        .banner_shape_6 {
+            position: absolute;
+            width: 45px;
+            height: 55px;
+            top: 8%;
+            left: 94%;
+            z-index: 1;
+            animation: shake linear 2.5s infinite alternate;
+        }
+        
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+        
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes zoom {
+            from {
+                transform: scale(1);
+            }
+        
+            to {
+                transform: scale(1.5);
+            }
+        }
+        
+        @keyframes shake {
+            from {
+                margin-left: 10px;
+            }
+        
+            to {
+                margin-left: 0px;
+            }
+        }
+        
+    }
+
+    .banner_text {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        padding-bottom: 40px;
+
+        h3{
+            color: $colorPrimary;
+            text-transform: capitalize;
+            font-size: 30px;
+            font-weight: $fontSemibold;
+            font-family: $cursiveFont;
+        }
+        h1{
+            padding: 15px 0;
+            font-size: 58px;
+            font-weight: $fontBold;
+            line-height: 65px;
+            text-transform: capitalize;
+            color: $colorWhite;
+        }
+        p{
+            font-size: $paraFSize;
+            color: $colorWhite;
+            font-weight: $fontNormal;
+            font-family: $paraFont;
+        }
+        form{
+            margin-top: 20px;
+            background: $colorWhite;
+            padding: 10px;
+            border-radius: 80px;
+            position: relative;
+            input{
+                border-radius: 30px;
+                border-color: #ddd;
+                padding: 17px 25px;
+                width: 100%;
+                border: 1px solid #eee;
+            }
+            button{
+                position: absolute;
+                top: 16px;
+                right: 16px;
+                &:hover{
+                    background-color: $darkblue;
+                    color: $colorWhite;
+                    padding-left: 50px;
+                    padding-right: 30px;
+                }
+                &:hover::after{
+                    opacity: 1;
+                    left: 10px;
+                }
+            }
+        } 
+
+    }    
+    .banner_right {
+        margin-top: 180px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        .banner_img {
+            height: 520px;
+            width: 520px;
+            position: absolute;
+            border-radius: 50%;
+            padding: 19px;
+            box-shadow: $boxShadow;
+            z-index: 1;
+            left: 70px;
+            img {
+                border-radius: 50%;
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                background: url(../images/home/banner_img_shapes.png) no-repeat center/cover;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                animation: rotate linear 100s infinite;
+                z-index: -1;
+                border-radius: 50%;
+            }
+            span {
+                position: absolute;
+                background: $colorPrimary;
+                width: 140px;
+                height: 140px;
+                top: 30px;
+                left: 0px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                color: $colorWhite;
+                font-size: 35px;
+                font-family: $cursiveFont;
+                letter-spacing: 2px;
+                font-weight: 900;
+                text-transform: lowercase;
+                border-radius: 50%;
+                padding: 15px;
+                text-align: center;
+                border: 4px solid $colorWhite;
+                line-height: 40px;
+            }
+        }
+    }
+    
+}
+// ============Banner CSS Ends========
+// ============OFFER CSS Starts========
+#offer{
+    position: relative;
+    background: #EEF6EB;
+    padding: 100px 0;
+    .offer_btn{
+        position: absolute;
+        top: 150px;
+        right: 0px;
+        display: flex;
+        gap: 10px;
+        transform: translateX(82%);
+        z-index: 10;
+        
+    }
+    .offer_item_wrap{
+        .offer_item{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: $colorWhite;
+            .offer_img{
+                width: 526px;
+                height: 212px;
+                object-fit: cover;
+            }
+            position: relative;
+            span{
+                font-size: $navFont;
+                font-weight: $fontSemibold;
+                text-transform: capitalize;
+                position: absolute;
+                top: 44px;
+                left: 180px;
+                width: 60px;
+                height: 60px;
+                line-height: 18px;
+                background: $colorPrimary;
+                border: 2px solid $colorWhite;
+                border-radius: 50%;
+                color: $colorWhite;
+                padding: 10px;
+            }
+            .offer_item_text{
+                position: absolute;
+                width: 246px;
+                top: 45px;
+                left: 269px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                .title {
+                    text-transform: capitalize;
+                    font-size: 20px;
+                    font-weight: $fontBold;
+                    transition: all linear .3s;
+                    color: $darkblue;
+                    font-family: $headingFont;
+                    &:hover{
+                        color: $colorPrimary;
+                    }
+                }
+                p{
+                    overflow: hidden;
+                }
+                ul{
+                    display: flex;
+                    gap: 5px;
+                    padding-left: 0;
+                    li{
+                        a{ 
+                            i{
+                            width: 30px;
+                            height: 30px;
+                            background: $colorPrimary;
+                            text-align: center;
+                            margin-right: 5px;
+                            line-height: 30px;
+                            color: $colorWhite;
+                            font-size: 14px;
+                            border-radius: 50%;
+                            transition: all linear .3s;
+                            &:hover{
+                                background: $darkblue;
+                            }
+                            }
+                        }
+                        
+                    }
+                }
+
+            }
+            
+        }
+    }
+}
+// ============OFFER CSS Ends========
+// ============Reservation CSS Starts========
+#reservation{
+    padding: 100px 0;
+    .reserve_bg{  
+        position: relative;
+        background: url(../images/home/reservation_bg.jpg) no-repeat center/cover;
+        border-radius: 7px;
+        .reservation_form{
+            position: relative;
+            z-index: 1;
+            padding: 50px;
+            h2{
+                text-transform: capitalize;
+                font-size: 30px;
+                font-weight: $fontSemibold;
+                color: $colorWhite;
+                border-bottom: 1px solid $colorWhite;
+                padding-bottom: 25px;
+                margin-bottom: 25px;
+            }
+            form{
+                .reservation_input{
+                    label {
+                        text-transform: capitalize;
+                        color: $colorWhite;
+                        font-weight: 600;
+                        margin-bottom: 5px;
+                    }
+                    input,select{
+                        width: 100%;
+                        padding: 12px 20px;
+                        outline: none;
+                        resize: none;
+                        border: 1px solid #eee;
+                        border-radius: 4px;
+                        font-size: 16px;
+                        font-weight: 300;
+                        -webkit-border-radius: 4px;
+                    }
+                }
+                button{
+                    width: 100%;
+                    border-radius: 4px;
+                    background: $darkblue;
+                    margin-top: 20px;
+                    &:hover.common_btn::after{
+                        opacity: 1;
+                        left: 20px;
+                    }
+                    &:hover{
+                        padding-right: 20px;
+                    }
+                }
+            }
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: -1px;
+            background: #ff7c08e8;
+            clip-path: polygon(54% 0, 100% 0%, 100% 100%, 38% 100%);
+            border-radius: 0px 10px 10px 0px;
+
+        }
+    }
+}
+// ============Reservation CSS Ends========
+// ============FOOD_MENU CSS Starts========
+#food_menu{
+    padding-bottom: 100px;
+    .food_menu_btn{
+        margin-top: 30px;
+        button {
+            padding: 5px 20px;
+            text-transform: capitalize;
+            color: $colorPrimary;
+            margin: 5px 0px 0px 10px;
+            border-radius: 4px;
+            background: $colorWhite;
+            border: 1px solid $colorPrimary;
+            font-weight: $fontMedium;
+            font-size: 15px;
+            transition: $sec3;
+            &:hover,.active{
+                background-color: $colorPrimary;
+                color: $colorWhite;
+            }
+        }
+
+    }
+    .food_item_wrap{
+        display: flex;
+        flex-wrap: wrap;
+        .food_menu_item{
+            width: 344px;
+            margin-top: 25px;
+            position: relative;
+            border-radius: 5px;
+            background: $colorWhite;
+            box-shadow: $boxShadow;
+            margin-left: 12px;
+            transition: all linear 0.3s;
+            overflow: hidden;
+            object-fit: cover;
+            
+            &:hover .food_item_img{
+                transform: scale(1.05);
+                transition: $sec3;
+            }
+            &:hover .food_item_text{
+                margin-top: 17px;
+                transition: $sec3;
+            }
+            
+            .food_item_img{
+                height: 220px;
+                border-radius: 5px 5px 0px 0px;
+                overflow: hidden;
+                img{
+                    transition: $sec3;
+                }
+            }
+            .category{
+                text-transform: capitalize;
+                font-size: $navFont;
+                color: $colorWhite;
+                font-family: $cursiveFont;
+                position: absolute;
+                top: 204px;
+                right: 0;
+                background: $colorPrimary;
+                padding: 3px 15px;
+                box-shadow: $boxShadow;
+                border-radius: 4px 0px 0px 4px;
+                transition: $sec3;
+                &:hover{
+                    color: $darkblue;
+                }
+            }
+            .food_item_text{
+                text-align: center;
+                gap: 10px;
+                margin-top: 20px;
+                transition: $sec3;
+                .title{
+                    text-transform: capitalize;
+                    color: $darkblue;
+                    font-size: 20px;
+                    font-family: $headingFont;
+                    font-weight: $fontBold;
+                    display: block;
+                    transition: $sec3;
+                }
+                .rating{
+                    color: #ff9933;
+                    font-size: 16px;
+                    span{
+                        font-size: $navFont;
+                        font-weight: $fontSemibold;
+                        padding-left: 20px;
+                        position: relative;
+                        &::after{
+                            position: absolute;
+                            content: "";
+                            width: 10px;
+                            height: 1px;
+                            background: $paraColor;
+                            top: 11px;
+                            left: 4px;
+                        }
+                    }
+                }
+                .price{
+                    font-size: 22px;
+                    font-weight: $fontBold;
+                    color: $colorPrimary;
+                    text-transform: capitalize;
+                    margin-bottom: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5px;
+                    del{
+                        color: #736f6f;
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .food_icon{
+                padding: 15px 20px 25px 0px;
+                gap: 10px;
+                a{
+                    width: 35px;
+                    height: 35px;
+                    line-height: 35px;
+                    text-align: center;
+                    background: $colorWhite;
+                    color: $colorPrimary;
+                    font-size: 14px;
+
+                    border-radius: 3px;
+                    transition: $sec3;
+                    border: 1px solid $colorPrimary;
+                }
+            }
+            .add_to_cart{
+                position: absolute;
+                left: -1px;
+                bottom: 24px;
+                background: $colorPrimary;
+                padding: 6px 25px 6px 25px;
+                text-transform: capitalize;
+                font-size: $navFont;
+                font-weight: $fontSemibold;
+                color: $colorWhite;
+                border-radius: 0px 4px 4px 4px;
+                transition: $sec3;
+                &:hover{
+                    background: $darkblue;
+                    color: $colorWhite;
+                }
+                &::after{
+                    position: absolute;
+                    content: "";
+                    bottom: 35px;
+                    left: -1px;
+                    z-index: 100;
+                    transition: $sec3;
+                    width: 0;
+                    height: 0;
+                    border-top: 20px solid transparent;
+                    border-right: 13px solid $colorPrimary;
+                    border-bottom: 0 solid transparent;
+                }
+                &:hover::after{
+                    border-right: 13px solid #000000;
+                }
+            }
+        }
+    }
+}
+// ============FOOD_MENU CSS Ends========
+// ============Chefs CSS Starts========
+#chefs{
+    position: relative;
+    background: #EEF6EB;
+    padding: 100px 0;
+    .team_btn{
+        position: absolute;
+        top: 140px;
+        right: 0px;
+        display: flex;
+        gap: 10px;
+        transform: translateX(82%);
+        z-index: 10;
+    }
+    .team_wrap{
+        .team_member{
+            margin: 25px 12px 0px 12px;
+            border-radius: 10px;
+            background: $colorWhite;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            margin-top: 25px;
+            transition: all linear .3s;
+            &:hover {
+                margin-top: 20px;
+            }
+            &:hover h4{
+                color: $colorPrimary;
+            }
+            &:hover .chef_img img{
+                transform: scale(1.05);
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 30%;
+                background: $colorPrimary;
+                top: 0;
+                left: 0;
+                clip-path: polygon(0 0, 100% 0%, 100% 25%, 50% 100%, 0 25%);
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                background: url(../images/home/chefs_shapes.png) no-repeat center/cover;
+                width: 85px;
+                height: 150px;
+                bottom: 0px;
+                left: -15px;
+                transform: rotate(45deg);
+                opacity: .04;
+            }
+            .chef_img{
+                width: 200px;
+                height: 200px;
+                border: 10px solid $colorWhite;
+                border-radius: 50%;
+                box-shadow: $boxShadow;
+                overflow: hidden;
+                margin: 0 auto;
+                padding: 10px;
+                background: $colorPrimary;
+                position: relative;
+                z-index: 1;
+                transition: $sec3;
+                img{
+                    border-radius: 50%;
+                    transition: $sec3;
+                }
+            }
+            .team_text{
+                h4 {
+                    text-transform: capitalize;
+                    color: $paraColor;
+                    font-size: 24px;
+                    font-family: $headingFont;
+                    font-weight: $fontSemibold;
+                    display: block;
+                    text-align: center;
+                    margin: 30px 0px 5px 0px;
+                    transition: $sec3;
+                }
+                p{
+                    padding-top: 15px;
+                    text-transform: capitalize;
+                    text-align: center;
+                    font-weight: $fontSemibold;
+                }
+                ul {
+                    justify-content: center;
+                    margin-top: 27px;
+                }
+                li a{
+                    i{
+                        width: 35px;
+                        height: 35px;
+                        line-height: 35px;
+                        text-align: center;
+                        background: #ff7c0821;
+                        color: $colorPrimary;
+                        font-size: $navFont;
+                        margin-right: 10px;
+                        border-radius: 50%;
+                        transition: $sec3;
+                        &:hover {
+                            background: $colorPrimary;
+                            color: $colorWhite;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+// ============Chefs CSS Ends========
+// ============Best_seller CSS Starts========
+#best_seller{
+    padding: 100px 0;
+    .best_seller_item{
+        position: relative;
+        overflow: hidden;
+        .seller_img{
+            border-radius: 10px;
+        }
+        .seller_text{
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 30px;
+            h5{
+                padding: 10px 0 30px 0;
+                font-family: $cursiveFont;
+                color: $colorPrimary;
+                text-transform: capitalize;
+                font-size: 20px;
+            }
+            h2{
+                color: $darkblue;
+                font-size: 28px;
+                font-weight: $fontBold;
+                text-transform: capitalize;
+            }
+            p{
+                max-width: 315px;
+                padding-top: 20px;
+            }
+            a{
+                text-transform: capitalize;
+                font-size: 17px;
+                font-weight: $fontBold;
+                color: $darkblue;
+                margin-top: 30px;
+                border-bottom: 1px solid $darkblue;
+                padding-bottom: 0px;
+                transition: $sec3;
+                &:hover{
+                    color: $colorPrimary;
+                    border-color: $colorPrimary;
+                }
+            }
+        }
+    }
+}
+// ============Best_seller CSS Ends========
+// ============ORDER CSS Starts========
+#order{
+    .order{
+        padding: 50px 20px 40px 20px;
+        background: linear-gradient(#231f40c4,rgba(35, 31, 64, 0.77)), url(../images/home/download_img.png) no-repeat center/cover;
+        h5 {
+            color: $colorPrimary;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 25px;
+            font-family: $cursiveFont;
+        }
+        h2 {
+            margin: 0 0 30px 10px;
+            max-width: 365px;
+            text-align: center;
+            color: $colorWhite;
+            font-size: 36px;
+            line-height: 40px;
+            font-weight: $fontBold;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            li{
+                background: $colorPrimary;
+                padding: 2px 15px;
+                border-radius: 5px;
+                transition: $sec3;
+                a{
+                    display: flex;
+                    color: $colorWhite;
+                    .icon{
+                        font-size: $navFont;
+                        color: $colorWhite;
+                        margin-right: 15px;
+                        i{
+                            margin-top: 15px;
+                            font-size: $headSize1;
+                        }
+                    }
+                    p{
+                        font-size: $navFont;
+                        color: $colorWhite;
+                        font-weight: $fontBold;
+                        margin-bottom: 5px;
+                        span{
+                            color: $colorWhite;
+                        }
+                    }
+                }
+                &:hover{
+                    background: $colorRed;
+                }
+            }    
+        }
+        
+    }
+    .order_right{
+        .order_item_wrap{
+            .order_item{
+                max-width: 263px;
+                object-fit: cover;
+                height: 378px;
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+// ============ORDER CSS Ends========
+// ============TESTIMONIAL CSS Starts========
+#testimonial{
+    padding: 100px 0;
+    background: url(../images/home/testimonial_bg.jpg) no-repeat center/cover;
+    position: relative;
+    z-index: -2;
+    .testimonial_btn{
+        position: absolute;
+        top: 140px;
+        right: 0px;
+        display: flex;
+        gap: 10px;
+        transform: translateX(82%);
+        z-index: 2;
+    }
+    .slick-initialized .slick-slider{
+        z-index: 99;
+      }
+
+    .testimonial_wrap{
+        .testimonial_item{
+            margin-top: 105px;
+            position: relative;
+            padding: 15px 0px 15px 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            &::after{
+                position: absolute;
+                content: "";
+                background: $colorPrimary;
+                width: 50%;
+                height: 100%;
+                bottom: 0;
+                left: 0;
+                z-index: -1;
+                border-radius: 25px;
+            }
+            .testimonial_img{
+                width: 150px;
+                height: 150px;
+                border: 5px solid $colorWhite;
+                box-shadow: $boxShadow;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-left: 0;
+                position: absolute;
+                z-index: 20;
+                top: -80px;
+            }
+            .testimonial_text {
+                background: $darkblue;
+                padding: 90px 20px 30px 10px;
+                border-radius: 25px;
+                position: relative;
+                text-align: center;
+                h4{
+                    color: $colorWhite;
+                    font-size: 30px;
+                    font-weight: $fontBold;
+                    text-transform: capitalize;
+                    margin-bottom: 5px;
+                    position: relative;
+                    &::after,&::before{
+                        position: absolute;
+                        content: "";
+                        background: url(../images/home/testi_quot.png) no-repeat center/cover;
+                        background-size: contain;
+                        width: 40px;
+                        height: 40px;
+                        top: 0px;
+                        left: 15px;
+                        z-index: 1;
+                    }
+                    &::before{
+                        transform: rotate(180deg);
+                        left: auto;
+                        right: 15px;
+                    }
+                }
+                .designation {
+                    padding-top: 20px;
+                    color: $colorWhite;
+                    font-size: $paraFSize;
+                    text-transform: uppercase;
+                }
+                .feedback {
+                    max-width: 490px;
+                    color: #e7e5e5;
+                    margin: 20px 0px 25px 0px;
+                }
+            }
+        }
+    }
+}
+// ============TESTIMONIAL CSS Ends========
+// ============COUNTER_UP CSS Starts========
+#counter_up{
+    background: linear-gradient(#231f40c4,rgba(35, 31, 64, 0.77)), url(../images/home/counter_bg.jpg) no-repeat center/cover;
+    padding: 100px 0;
+    .counter_item{
+        text-align: center;
+        .text {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #231f4094;
+            border-radius: 50%;
+            margin: 0 auto;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                background: url(../images/home/counter_shapes.png) no-repeat center/cover;
+                width: 235px;
+                height: 235px;
+                top: -20px;
+                left: -18px;
+                z-index: 1;
+                animation: rotate linear 60s infinite;
+            }
+            h2{
+                color: $colorWhite;
+                font-size: 36px;
+                font-weight:$fontBold;
+                position: relative;
+                display: inline-block;
+                margin-right: 25px;
+                &::after{
+                    position: absolute;
+                    content: "+";
+                    color: $colorWhite;
+                    font-size: 40px;
+                    top: -3px;
+                    right: -25px;
+                }
+            }
+            span{
+                display: block;
+                width: 50px;
+                height: 50px;
+                background: $colorPrimary;
+                line-height: 50px;
+                color: $colorWhite;
+                border-radius: 50%;
+                position: absolute;
+                bottom: -25px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 2;
+            }
+        }
+        p{
+            color: $colorWhite;
+            text-transform: capitalize;
+            font-size: 20px;
+            font-weight: $fontBold;
+            margin-top: 40px;
+        }
+    }
+}
+// ============COUNTER_UP CSS Ends========
+// ============BLOG CSS Starts========
+#blog{
+    position: relative;
+    padding: 100px 0;
+    background: radial-gradient(circle, rgba(255, 124, 8, 0.4066001400560224) 0%, rgba(0, 0, 0, 0) 83%);
+    .blog_btn{
+        position: absolute;
+        top: 140px;
+        right: 0px;
+        display: flex;
+        gap: 10px;
+        transform: translateX(82%);
+        z-index: 2;
+    }
+    .blog_wrap{
+        .blog_item{
+            max-width: 350px;
+            padding: 10px;
+            box-shadow: $boxShadow;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 25px;
+            background: $colorWhite;
+            transition: $sec3;
+            &:hover{
+                margin-top: 20px;
+            }
+            &:hover .blog_img img{
+                transform: scale(1.05);
+            }
+            .blog_img{
+                border-radius: 10px;
+                overflow: hidden;
+                img{
+                    transition: $sec3;
+                }
+            }
+            .blog_author{
+                display: flex;
+                align-items: center;
+                padding: 20px 20px 0px 20px;
+                .author_img {
+                    width: 60px;
+                    height: 60px;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    border: 5px solid $colorWhite;
+                    box-shadow: $boxShadow;
+                    margin-right: 10px;
+                }
+                .text{
+                    padding: 15px 20px 15px 20px;
+                    position: relative;
+                    h5{
+                        font-size: 17px;
+                        text-transform: capitalize;
+                        font-weight: $fontSemibold;
+                        margin-top: 6px;
+                    }
+                    p {
+                        text-transform: capitalize;
+                        font-size: 13px;
+                        color: $colorPrimary;
+                    }
+                }
+            }
+            .blog_text{
+                position: relative;
+                .category {
+                    position: absolute;
+                    top: -117px;
+                    right: 18px;
+                    font-family: $cursiveFont;
+                    background: $colorPrimary;
+                    color: $colorWhite;
+                    padding: 6px 20px;
+                    text-transform: capitalize;
+                    border-radius: 7px;
+                    transition: $sec3;
+                    z-index: 10;
+                    &:hover{
+                        color: $darkblue;
+                    }
+                }
+                .title {
+                    display: block;
+                    font-size: 24px;
+                    font-weight: $fontBold;
+                    text-transform: capitalize;
+                    color: $darkblue;
+                    font-family: $headingFont;
+                    display: -webkit-box;
+                    overflow: hidden;
+                    transition: all linear .3s;
+                    &:hover{
+                        color: $colorPrimary;
+                    }
+                }
+                p{
+                    display: -webkit-box;
+                    overflow: hidden;
+                    margin-top: 10px;
+                }
+                .blog_footer {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-top: 1px solid #ff7c0845;
+                    padding-top: 15px;
+                    margin-top: 20px;
+                    a{
+                        text-transform: capitalize;
+                        font-size: 16px;
+                        font-weight: $fontSemibold;
+                        color: $darkblue;
+                        transition: $sec3;
+                        i{
+                            margin-left: 5px;
+                        }
+                        &:hover{
+                            color: $colorPrimary;
+                        }
+                    }
+                    span {
+                        color: $colorPrimary;
+                        &:hover{
+                            color: $colorPrimary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// ============BLOG CSS Ends========
+// ============FOOTER CSS Starts========
+#footer{
+    padding: 50px 0;
+    background: linear-gradient(#231f40c4,rgba(35, 31, 64, 0.77)), url(../images/home/footer_bg.jpg) no-repeat center/cover;
+    .footer_content1{
+        .footer_logo {
+            width: 200px;
+            overflow: hidden;
+            display: block;
+        }
+        span {
+            display: block;
+            margin: 30px 0px;
+            color: $colorWhite;
+        }
+        .social_link{
+            padding-left: 0;
+            display: flex;
+            gap: 10px;
+            li a {
+                position: initial;
+                i{
+                    color: $colorWhite;
+                    width: 35px;
+                    height: 35px;
+                    text-align: center;
+                    line-height: 35px;
+                    background: $colorPrimary;
+                    border-radius: 50%;
+                    &:hover {
+                        background: $colorWhite;
+                        color: $colorPrimary;
+                    }
+                }
+            }
+        }
+    }
+    .footer_content{
+        margin-top: 10px;
+        h3{
+            color: $colorWhite;
+            font-size: 22px;
+            font-weight: $fontBold;
+            text-transform: capitalize;
+            margin-left: 30px;
+            border-bottom: 1px solid $colorPrimary;
+            display: inline-block;
+            padding-bottom: 20px;
+        }
+        ul{
+            li a{
+                color: #dfdddd;
+                text-transform: capitalize;
+                font-size: 16px;
+                margin-top: 15px;
+                display: block;
+                position: relative;
+                padding-left: 15px;
+                transition: all linear .3s;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 7px;
+                    height: 7px;
+                    background: $colorPrimary;
+                    top: 9px;
+                    left: 0;
+                    transition: $sec3;
+                }
+                &:hover {
+                    color: $colorPrimary;
+                }
+            }
+        }
+        .info {
+            color: #dfdddd;
+            margin-top: 20px;
+            display: block;
+            border-bottom: 1px solid #ff7c0885;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            padding-left: 35px;
+            position: relative;
+            i{
+                font-size: 20px;
+                color: $colorPrimary;
+                position: absolute;
+                left: 0;
+                top: 3px;
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }        
+    }
+}
+.footer_bottom{
+    margin: 0 auto;
+    padding: 20px 0px;
+    background: $colorPrimary;
+    p{
+        color: $colorWhite;
+        text-align: center;
+        b {
+            text-transform: capitalize;
+            color: $colorWhite;
+            transition: $sec3;
+            font-weight: $fontSemibold;
+        }
+    }
+}
+
+// ============FOOTER CSS Ends========
+// ============SCROLL BTN CSS Starts========
+.scroll_btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    cursor: pointer;
+    text-align: center;
+    color: $colorWhite;
+    text-transform: capitalize;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background: $colorPrimary;
+    border: 1px solid $colorWhite;
+    border-radius: 50%;
+    transition: all linear .3s;
+}
+
+.scroll_btn:hover {
+    background: $darkblue;
+}
+
+@keyframes scroll_amini {
+    from {
+        bottom: 30px;
+    }
+
+    to {
+        bottom: 50px;
+    }
+}
+
+// ============SCROLL BTN CSS Ends========
