@@ -94,7 +94,6 @@ $('.offer_item_wrap').slick({
   });
   // =========Counter_up============
   $(function(){
-    console.log("ready");
     $('.counter').counterUp({
         delay: 10,
         time: 2000  
@@ -110,3 +109,7 @@ $('.blog_wrap').slick({
   prevArrow: ".left_btn",
   nextArrow: ".right_btn",
 });
+// ==============WOW ============
+$(function(){
+  new WOW().init();
+})

@@ -131,13 +131,21 @@ button{
 }
 // -------modal design---------
 #cartModal{
-    position: relative;
     .btn-close{
         position: absolute;
-        background-color: $colorPrimary;
+        background: $colorPrimary;
+        color: $colorWhite;
+        width: 30px;
+        height: 30px;
         right: 0;
-        top: 0;
+        top: 0px;
         border-radius: 50%;
+        opacity: 1;        
+        z-index: 900;
+        &:hover{
+            background: $colorRed;
+            opacity: 1;
+        }
     }
     .modal_img{
         border-radius: 10px;
