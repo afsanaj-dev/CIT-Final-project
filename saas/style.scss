@@ -253,13 +253,22 @@ nav{
         background: $colorWhite;
     }
     .main_menu{
-        position: absolute;
+        position: fixed !important;
         top: 0;
+        left: 0;
         width: 100%;
         height: 80px;   
         border-bottom: 1px solid #eee;
         z-index: 10;
         transition: $sec3;
+        .menu_fix {
+            top: -50px !important;
+            left: 0;
+            width: 100%;
+            background: $colorRed;
+            z-index: 99;
+            transition: all linear 0.3s;
+        }
     }
     .logo_img{
         padding-top: 10px;
@@ -296,7 +305,7 @@ nav{
                 top: 40px;
                 left: 50%;
                 opacity: 0;
-                transition: all 0.3s linear 0s;
+                transition: $sec3;
                 transform: translateX(-50%);
             }
            &:hover {
@@ -337,8 +346,7 @@ nav{
                 color: $darkblue;
                 position: relative;
                 padding: 0px 15px 10px 10px;
-                border-bottom: 1px solid #eee;
-                transition: all 0.3s linear 0s;
+                transition: $sec3;
                 &::after{
                     position: absolute;
                     content: "";
@@ -348,21 +356,30 @@ nav{
                     top: 10px;
                     left: -10px;
                     opacity: 0; 
-                    transition: all 0.3s linear 0s;
+                    transition: $sec3;
                     // Hover Transition Problem*************
                 }
+                &::before{
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 1px;
+                    background: #eee;
+                    bottom: -5px;
+                    left: -25px;
+                    transition: $sec3;
+                }
                 &:hover {
-                    left: 35px;
+                    padding-left: 15px;
                     color: $colorPrimary;
-                    transition: all 0.3s linear 0s;
+                    transition: $sec3;
                 }
                 &:hover::after{
                     opacity: 1;
                     z-index: 50;
-                    transition: all 0.3s linear 0s;
+                    transition: $sec3;
                 }
-            }
-           
+            }  
         }
         .dropdown{
             &:hover .drop_menu{
