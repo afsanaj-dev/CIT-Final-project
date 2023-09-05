@@ -1,5 +1,18 @@
 @media(max-width:575.98px){
-
+/* -----common----- */
+.common_heading h4{
+    font-size: 18px;
+}
+.common_heading h2{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.left_btn, .right_btn{
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
 /* ---Header---- */
     .topbar_info{
         display: none !important;
@@ -44,8 +57,48 @@
         flex-direction: column;
         gap: 20px;
     }
+    /* -------NAVBAR ENDS------- */
+    /* -------BANNER Starts------- */
+    #banner{
+        padding: 90px 0 100px 0;
+    }
+    .banner_shape_1,.banner_shape_2,.banner_shape_3,.banner_shape_5,.banner_shape_4,.banner_shape_6{
+        display: none;
+    }
+    #banner .banner_text h3{
+        font-size: 20px;
+    }
+    #banner .banner_text h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    #banner .banner_text form input{
+        padding: 15px;
+    }
+    #banner .banner_right .banner_img{
+        display: none;
+    }
+    /* -------BANNER ENDS------- */
+    /* -------BANNER Starts------- */
+    #offer .offer_btn{
+        top: 179px;
+        right: 50px;
+    }
+    #offer .offer_item_wrap .offer_item{
+        max-width: 130px;
+    }
+    /* #offer .offer_item_wrap .offer_item .offer_img{
+     
+    } */
+    /* -------BANNER ENDS------- */
+    /* -------BANNER Starts------- */
+    /* -------BANNER ENDS------- */
+    /* -------BANNER Starts------- */
+    /* -------BANNER ENDS------- */
+    /* -------BANNER Starts------- */
+    /* -------BANNER ENDS------- */
    
-
+/* ------responsive for small device ends */
 }
 
 

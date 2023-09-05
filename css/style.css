@@ -228,14 +228,6 @@ nav .main_menu {
   z-index: 10;
   transition: all linear 0.3s;
 }
-nav .main_menu .menu_fix {
-  top: -50px !important;
-  left: 0;
-  width: 100%;
-  background: #eb0029;
-  z-index: 99;
-  transition: all linear 0.3s;
-}
 nav .logo_img {
   padding-top: 10px;
   max-width: 170px;
@@ -393,6 +385,16 @@ nav .menu_icon li a span {
 nav .menu_icon li a:hover i {
   background-color: #ff7c08;
   color: #ffffff;
+  transition: all linear 0.3s;
+}
+
+.main_menu.fixNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  width: 100%;
+  z-index: 99;
   transition: all linear 0.3s;
 }
 
@@ -606,6 +608,7 @@ nav .menu_icon li a:hover i {
   z-index: 10;
 }
 #offer .offer_item_wrap .offer_item {
+  max-width: 540px;
   margin: 10px;
   padding: 10px;
   border-radius: 5px;
@@ -613,8 +616,7 @@ nav .menu_icon li a:hover i {
   position: relative;
 }
 #offer .offer_item_wrap .offer_item .offer_img {
-  width: 526px;
-  height: 212px;
+  max-height: 212px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -623,8 +625,8 @@ nav .menu_icon li a:hover i {
   font-weight: 600;
   text-transform: capitalize;
   position: absolute;
-  top: 44px;
-  left: 180px;
+  top: 50px;
+  left: 133px;
   width: 60px;
   height: 60px;
   line-height: 18px;
@@ -636,7 +638,7 @@ nav .menu_icon li a:hover i {
 }
 #offer .offer_item_wrap .offer_item .offer_item_text {
   position: absolute;
-  width: 246px;
+  max-width: 246px;
   top: 45px;
   left: 269px;
   display: flex;
