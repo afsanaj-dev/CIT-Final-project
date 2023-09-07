@@ -952,10 +952,13 @@ nav{
                     background: $colorWhite;
                     color: $colorPrimary;
                     font-size: 14px;
-
                     border-radius: 3px;
                     transition: $sec3;
                     border: 1px solid $colorPrimary;
+                    &:hover{
+                        background: $colorPrimary;
+                        color: $colorWhite;
+                    }
                 }
             }
             .add_to_cart{
@@ -1227,7 +1230,7 @@ nav{
     .order_right{
         .order_item_wrap{
             .order_item{
-                max-width: 263px;
+                margin-right: 10px;
                 object-fit: cover;
                 height: 378px;
                 img{

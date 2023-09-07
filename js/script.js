@@ -35,49 +35,6 @@
     
     
 //=======OFFER ITEM SLIDER======
-// $('.offer_item_slider').slick({
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     autoplay: true,
-//     autoplaySpeed: 4000,
-//     dots: false,
-//     arrows: true,
-//     nextArrow: '<i class="far fa-long-arrow-right nextArrow"></i>',
-//     prevArrow: '<i class="far fa-long-arrow-left prevArrow"></i>',
-//     responsive: [
-//         {
-//             breakpoint: 1400,
-//             settings: {
-//                 slidesToShow: 2,
-//             }
-//         },
-//         {
-//             breakpoint: 1200,
-//             settings: {
-//                 slidesToShow: 2,
-//             }
-//         },
-//         {
-//             breakpoint: 992,
-//             settings: {
-//                 slidesToShow: 2,
-//             }
-//         },
-//         {
-//             breakpoint: 768,
-//             settings: {
-//                 slidesToShow: 1,
-//             }
-//         },
-//         {
-//             breakpoint: 576,
-//             settings: {
-//                 arrows: false,
-//                 slidesToShow: 1,
-//             }
-//         }
-//     ]
-// });
 
 $('.offer_item_wrap').slick({
     slidesToShow: 2,
@@ -87,6 +44,14 @@ $('.offer_item_wrap').slick({
     arrows: true,
     prevArrow: ".left_btn",
     nextArrow: ".right_btn",
+    responsive: [
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
 
   // ========FOOD MENU MIXIT UP===========
@@ -107,6 +72,14 @@ $('.offer_item_wrap').slick({
     arrows: true,
     prevArrow: ".left_btn",
     nextArrow: ".right_btn",
+    responsive: [
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
   // ========Order==========
   $('.order_item_wrap').slick({
@@ -115,7 +88,14 @@ $('.offer_item_wrap').slick({
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
-
+    responsive: [
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
   // =========Testimonial========
   $('.testimonial_wrap').slick({
@@ -126,6 +106,14 @@ $('.offer_item_wrap').slick({
     arrows: true,
     prevArrow: ".left_btn",
     nextArrow: ".right_btn",
+    responsive: [
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
   // =========Counter_up============
   $(function(){
@@ -143,6 +131,14 @@ $('.blog_wrap').slick({
   arrows: true,
   prevArrow: ".left_btn",
   nextArrow: ".right_btn",
+  responsive: [
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+  ]
 });
 // ==============WOW ============
 $(function(){

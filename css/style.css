@@ -883,6 +883,10 @@ nav .menu_icon li a:hover i {
   transition: all linear 0.3s;
   border: 1px solid #ff7c08;
 }
+#food_menu .food_item_wrap .food_menu_item .food_icon a:hover {
+  background: #ff7c08;
+  color: #ffffff;
+}
 #food_menu .food_item_wrap .food_menu_item .add_to_cart {
   position: absolute;
   left: -1px;
@@ -1136,7 +1140,7 @@ nav .menu_icon li a:hover i {
   background: #eb0029;
 }
 #order .order_right .order_item_wrap .order_item {
-  max-width: 263px;
+  margin-right: 10px;
   -o-object-fit: cover;
      object-fit: cover;
   height: 378px;

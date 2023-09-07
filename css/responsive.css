@@ -79,20 +79,121 @@
         display: none;
     }
     /* -------BANNER ENDS------- */
-    /* -------BANNER Starts------- */
-    #offer .offer_btn{
-        top: 179px;
+    /* -------OFFER Starts------- */
+    #offer{
+        padding: 60px 0;
+    }
+    #offer .offer_btn,#chefs .team_btn{
+        top: 140px;
         right: 50px;
+        gap: 5px;
+    }
+    .offer_item_wrap{
+        align-items: center;
+        justify-content: center;
     }
     #offer .offer_item_wrap .offer_item{
-        max-width: 130px;
+        margin: 0px;
+        background: transparent;
     }
-    /* #offer .offer_item_wrap .offer_item .offer_img{
-     
-    } */
-    /* -------BANNER ENDS------- */
-    /* -------BANNER Starts------- */
-    /* -------BANNER ENDS------- */
+    #offer .offer_item_wrap .offer_item .offer_img{
+        margin: 0;
+       border-radius: 5px;
+        max-height: 175px;
+    }
+    #offer .offer_item_wrap .offer_item span{
+        font-size: 12px;
+        top: 45px;
+        left: 110px;
+        width: 50px;
+        height: 50px;
+        line-height: 16px;
+        text-align: center;
+    }
+    #offer .offer_item_wrap .offer_item .offer_item_text{
+        top: 20px;
+        left: 170px;
+        max-width: 150px;
+    }
+    #offer .offer_item_wrap .offer_item .offer_item_text .title{
+        font-size: 16px;
+    }
+    #offer .offer_item_wrap .offer_item .offer_item_text p{
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+    .offer_item_wrap.slick-initialized.slick-slider{
+        margin: 0;
+        padding: 0;
+    }
+    /* -------OFFER ENDS------- */
+    /* -------Reservation Starts------- */
+    #reservation{
+        padding: 60px 0;
+    }
+    #reservation .reserve_bg{
+        margin: 0 2px;
+    }
+    #reservation .reserve_bg .reservation_form{
+
+        padding: 40px 20px 20px 20px;
+    }
+    #reservation .reserve_bg::after{
+        border-radius: 10px;
+        clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+    /* -------Reservation ENDS------- */
+    /* -------MENU Starts------- */
+    .food_menu_btn{
+        /* margin-top: 0; */
+    }
+    .food_item_wrap{
+        align-items: center;
+        justify-content: center;
+    }
+    #food_menu .food_menu_btn button{
+        padding: 4px 15px;
+        margin: 5px 5px 0px 5px;
+        font-size: 13px;
+    }
+    #food_menu .food_item_wrap .food_menu_item {
+        width: 280px;
+    }
+    /* -------MENU ENDS------- */
+    /* -------CHEFS Starts------- */
+    #chefs {
+        padding: 60px 0;
+      }
+    /* -------CHEFS ENDS------- */
+    /* -------best_seller Starts------- */
+    #best_seller {
+        padding: 60px 0;
+      }
+      #best_seller .best_seller_item {
+        margin-top: 10px;
+      }
+      #best_seller .best_seller_item .seller_text{
+        padding: 19px;
+      }
+      #best_seller .best_seller_item .seller_text h5{
+        font-size: 16px;
+        padding: 0 0 18px 0;
+      }
+      #best_seller .best_seller_item .seller_text h2{
+        font-size: 19px;
+      }
+      #best_seller .best_seller_item .seller_text p {
+        max-width: 170px;
+        padding-top: 10px;
+        font-size: 13px;
+      }
+    /* -------best_seller ENDS------- */
+    /* -------ORDER Starts------- */
+    #order .order h2{
+        font-size: 30px;
+    }
+  
+    /* -------ORDER ENDS------- */
     /* -------BANNER Starts------- */
     /* -------BANNER ENDS------- */
     /* -------BANNER Starts------- */
