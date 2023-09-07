@@ -192,10 +192,26 @@
     #order .order h2{
         font-size: 30px;
     }
-  
     /* -------ORDER ENDS------- */
-    /* -------BANNER Starts------- */
-    /* -------BANNER ENDS------- */
+    /* -------TESTIMONIAL Starts------- */
+    #testimonial {
+        padding: 60px 0;
+      }
+      #testimonial .testimonial_btn{
+        right: 35px;
+        gap: 5px;
+      }
+    /* -------TESTIMONIAL ENDS------- */
+    /* -------BLOG Starts------- */
+    #blog .blog_btn{
+        top: 185px;
+        right: 35px;
+        gap: 5px;
+    }
+    #blog .blog_wrap .blog_item .blog_text .title{
+        font-size: 20px;
+    }
+    /* -------BLOG ENDS------- */
     /* -------BANNER Starts------- */
     /* -------BANNER ENDS------- */
    
