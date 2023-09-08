@@ -144,9 +144,6 @@
     }
     /* -------Reservation ENDS------- */
     /* -------MENU Starts------- */
-    .food_menu_btn{
-        /* margin-top: 0; */
-    }
     .food_item_wrap{
         align-items: center;
         justify-content: center;

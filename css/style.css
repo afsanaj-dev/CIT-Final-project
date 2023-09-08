@@ -1579,4 +1579,8 @@ nav .menu_icon li a:hover i {
   to {
     bottom: 50px;
   }
+}
+#about_banner {
+  padding: 100px 0;
+  background: linear-gradient(rgba(35, 31, 64, 0.768627451), rgba(35, 31, 64, 0.77)), url(../images/about/breadcrumb_bg.jpg) no-repeat center/cover;
 }/*# sourceMappingURL=style.css.map */
