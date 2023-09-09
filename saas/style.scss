@@ -1695,12 +1695,149 @@ nav{
 
 // ============About Banner CSS Starts========
 #about_banner{
-    padding: 100px 0;
+    padding: 250px 0 130px 0;
     background: linear-gradient(#231f40c4,rgba(35, 31, 64, 0.77)), url(../images/about/breadcrumb_bg.jpg) no-repeat center/cover;
+    .about_bn{
+        h1{
+            color: $colorWhite;
+            text-transform: capitalize;
+            font-size: 50px;
+            font-weight: $fontSemibold;
+            margin-bottom: 7px; 
+        }
+        .about_text{
+            padding-top: 40px;
+            display: flex;
+            position: relative;
+            a{
+                text-transform: capitalize;
+                color: $colorWhite;
+                font-size: 16px;
+                padding-right: 20px;
+                font-weight: $fontSemibold;
+                transition: all linear .3s;
+                &:hover{
+                    color: $colorPrimary;
+                }
+            }
+            span{
+                color: $colorPrimary;
+                font-size: 16px;
+                font-weight: $fontSemibold;
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                top: 53px;
+                left: 73px;
+                width: 8px;
+                height: 2px;
+                background-color: $colorWhite;
+            }
+        }
+    }
 }
 // ============About Banner CSS Ends========
-// ============About Banner CSS Starts========
-// ============About Banner CSS Ends========
+// ============About_COMPANY CSS Starts========
+#about_company{
+    padding: 100px 0;
+    .company_left{
+        position: relative;
+        .about_img{
+            overflow: hidden;
+            width: 500px;
+            height: 500px;
+            border-radius: 0px 100px 100px 0px;
+            border: 10px solid $colorWhite;
+            box-shadow: $boxShadow;
+        }
+        h3{
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: $colorPrimary;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            line-height: 30px;
+            align-items: center;
+            justify-content: center;
+            font-size: 52px;
+            font-weight: $fontBold;
+            color: $colorWhite;
+            text-align: center;
+            text-transform: capitalize;
+            border: 5px solid $colorWhite;
+            span {
+                margin-top: 10px;
+                display: block;
+                color: $colorWhite;
+                font-size: 19px;
+                margin-bottom: 10px;
+            }
+        }
+        p {
+            position: absolute;
+            background: $darkblue;
+            color: $colorWhite;
+            width: 350px;
+            padding: 20px;
+            bottom: 20px;
+            right: 0;
+            border: 5px solid $colorWhite;
+            border-radius: 40px 0px 40px 0px;
+            span {
+                display: block;
+                color: $colorPrimary;
+                font-size: 20px;
+                font-weight: $fontSemibold;
+                text-transform: capitalize;
+                text-align: right;
+                font-family: $cursiveFont;
+                margin-left: 15px;
+            }
+        }
+    }
+    .company_right{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            li{
+                position: relative;
+                text-transform: capitalize;
+                font-size: 16px;
+                color: $darkblue;
+                padding-left: 85px;
+                position: relative;
+                margin-bottom: 35px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                h4 {
+                    font-size: 20px;
+                    font-weight: $fontBold;
+                    margin-bottom: 20px;
+                }
+                &::after{
+                    position: absolute;
+                    content: "";
+                    background: url(../images/about/about_check.png) no-repeat center/cover;
+                    top: 35%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    border-radius: 50%;
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+        }
+    }
+}
+// ============About_COMPANY CSS Ends========
 // ============About Banner CSS Starts========
 // ============About Banner CSS Ends========
 // ============About Banner CSS Starts========
