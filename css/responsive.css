@@ -209,7 +209,22 @@
         font-size: 20px;
     }
     /* -------BLOG ENDS------- */
+/* ============================================== */
+                /* CHEFS PAGE */
+/* ================================================ */
+
     /* -------BANNER Starts------- */
+    #about_banner{
+        padding: 100px 0;
+    }
+    #about_banner .about_bn h1{
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 50px;
+    }
+    #chefs .team_wrap .team_member{
+        max-width: 280px;
+    }
     /* -------BANNER ENDS------- */
    
 /* ------responsive for small device ends */

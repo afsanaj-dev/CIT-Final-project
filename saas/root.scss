@@ -1,0 +1,235 @@
+// -----------------Variable Part Start------------
+    //-----color------
+    $colorPrimary: #ff7c08;
+    $colorRed: #eb0029;
+    $paraColor: #484747;
+    $darkblue: #231f40;
+    $colorWhite: #ffffff;
+    // -----Font Family------
+    $paraFont: 'Manrope', sans-serif;
+    $headingFont: 'Barlow', sans-serif;
+    $cursiveFont: 'Oleo Script', cursive;
+    // -----Font weight-----
+    $fontNormal: 400;
+    $fontMedium: 500;
+    $fontSemibold: 600;
+    $fontBold: 700;
+    // -----Font Size-----
+    $navFont: 16px;
+    $paraFSize: 18px;
+    $headSize1: 24px;
+    $headSize2: 35px;
+    // --------Transition------
+    $sec3: all linear 0.3s;
+
+    $boxShadow: rgba(100, 100, 111, 0.15) 0px 7px 29px 0px;
+    // --------------Variable Part End-------------
+    
+
+// ========common css starts
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+p,a,span{
+    font-weight: $fontNormal;
+    color: $paraColor;
+}
+ul,ol{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    line-height: 0.8px;
+    font-family: $headingFont;
+    color: $darkblue;
+}
+.container{
+    margin: 0 auto;
+}
+// ------common button---------
+button{
+    border: none;
+    box-shadow: none;
+}
+.common_btn{
+    background: $colorPrimary;
+    text-transform: capitalize;
+    color: $colorWhite;
+    padding: 12px 40px;
+    border-radius: 30px;
+    font-size: $paraFSize;
+    font-weight: $fontSemibold;
+    position: relative;
+    transition: all linear .3s;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 24px;
+        background: url(../images/home/arrow_icon.png) no-repeat center/cover;
+        top: 50%;
+        left: 0px;
+        opacity: 0;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        transition: all linear .3s;
+    }
+}
+// ------slick lfet/right arrow button-----
+.left_btn,.right_btn{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: $colorWhite;
+    display: inline-block;
+}
+.left_btn{
+    background-color: $colorPrimary;
+    &:hover{
+        background-color: $darkblue;
+    }
+}
+.right_btn{
+    background-color: $darkblue;
+}
+// ------common heading----------
+.common_heading{
+    h4 {
+        color: $colorPrimary;
+        font-family: $cursiveFont;
+        font-size: $headSize1;
+        font-weight: $fontSemibold;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        position: relative;
+        display: inline-block;
+        &::after {
+            position: absolute;
+            content: "";
+            background: url(../images/home/heading_shapes_1.png) no-repeat center/cover;
+            width: 65px;
+            height: 23px;
+            top: -10px;
+            right: -80px;
+        }
+    }
+    h2{
+        text-transform: capitalize;
+        font-size: $headSize2;
+        font-weight: 800;
+        line-height: 50px;
+    }
+    
+}
+// -------modal design---------
+#cartModal{
+    .btn-close{
+        position: absolute;
+        background: $colorPrimary;
+        color: $colorWhite;
+        width: 30px;
+        height: 30px;
+        right: 0;
+        top: 0px;
+        border-radius: 50%;
+        opacity: 1;        
+        z-index: 900;
+        &:hover{
+            background: $colorRed;
+            opacity: 1;
+        }
+    }
+    .modal_img{
+        border-radius: 10px;
+    }
+    .modal_text{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .title{
+            text-transform: capitalize;
+            color: $darkblue;
+            font-size: 30px;
+            font-family: $headingFont;
+            font-weight: $fontBold;
+            display: block;
+            transition: $sec3;
+        }
+        .rating{
+            color: #ff9933;
+            font-size: 16px;
+            span{
+                font-size: $navFont;
+                font-weight: $fontSemibold;
+                padding-left: 20px;
+            }
+        }
+        .price{
+            font-size: 22px;
+            font-weight: $fontBold;
+            color: $colorPrimary;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            display: flex;
+            gap: 5px;
+            del{
+                color: #736f6f;
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+
+    }
+    label{
+        text-transform: capitalize;
+        color: $colorWhite;
+        font-weight: $fontSemibold;
+        margin-bottom: 5px;
+    }
+    .size_wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+// ---------Page Count Design--------
+.page_no{
+    background-color: transparent;
+    ul{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 40px;
+        li{
+            width: 50px;
+            height: 50px;
+            padding: 0;
+            line-height: 50px;
+            text-align: center;
+            font-size: 16px;
+            background: $colorWhite;
+            color: $paraColor;
+            border-radius: 50%;
+            box-shadow: $boxShadow;
+            border: solid 1px #dee2e6;
+            &:hover{
+                background: $colorPrimary;
+            }
+            &:hover a{
+                color: $colorWhite;
+            }
+
+        }
+    }
+    .menu_page_no{
+        background-color: #EEF6EB;
+    }
+}
+// ============Common CSS Ends========

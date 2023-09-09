@@ -172,6 +172,180 @@ button {
   flex-direction: column;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+p, a, span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #484747;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 0.8px;
+  font-family: "Barlow", sans-serif;
+  color: #231f40;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+button {
+  border: none;
+  box-shadow: none;
+}
+
+.common_btn {
+  background: #ff7c08;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding: 12px 40px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  transition: all linear 0.3s;
+}
+.common_btn::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 24px;
+  background: url(../images/home/arrow_icon.png) no-repeat center/cover;
+  top: 50%;
+  left: 0px;
+  opacity: 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  transition: all linear 0.3s;
+}
+
+.left_btn, .right_btn {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  color: #ffffff;
+  display: inline-block;
+}
+
+.left_btn {
+  background-color: #ff7c08;
+}
+.left_btn:hover {
+  background-color: #231f40;
+}
+
+.right_btn {
+  background-color: #231f40;
+}
+
+.common_heading h4 {
+  color: #ff7c08;
+  font-family: "Oleo Script", cursive;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+.common_heading h4::after {
+  position: absolute;
+  content: "";
+  background: url(../images/home/heading_shapes_1.png) no-repeat center/cover;
+  width: 65px;
+  height: 23px;
+  top: -10px;
+  right: -80px;
+}
+.common_heading h2 {
+  text-transform: capitalize;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 50px;
+}
+
+#cartModal .btn-close {
+  position: absolute;
+  background: #ff7c08;
+  color: #ffffff;
+  width: 30px;
+  height: 30px;
+  right: 0;
+  top: 0px;
+  border-radius: 50%;
+  opacity: 1;
+  z-index: 900;
+}
+#cartModal .btn-close:hover {
+  background: #eb0029;
+  opacity: 1;
+}
+#cartModal .modal_img {
+  border-radius: 10px;
+}
+#cartModal .modal_text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#cartModal .modal_text .title {
+  text-transform: capitalize;
+  color: #231f40;
+  font-size: 30px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  display: block;
+  transition: all linear 0.3s;
+}
+#cartModal .modal_text .rating {
+  color: #ff9933;
+  font-size: 16px;
+}
+#cartModal .modal_text .rating span {
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 20px;
+}
+#cartModal .modal_text .price {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ff7c08;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 5px;
+}
+#cartModal .modal_text .price del {
+  color: #736f6f;
+  font-size: 18px;
+  font-weight: 500;
+}
+#cartModal label {
+  text-transform: capitalize;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+#cartModal .size_wrap {
+  display: flex;
+  flex-direction: column;
+}
+
 header {
   background-color: #231f40;
   width: 100%;
@@ -1584,4 +1758,142 @@ nav .menu_icon li a:hover i {
   to {
     bottom: 50px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+#about_banner {
+  padding: 200px 0 130px 0;
+  background: linear-gradient(rgba(35, 31, 64, 0.768627451), rgba(35, 31, 64, 0.64)), url(../images/about/breadcrumb_bg.jpg) no-repeat center/cover;
+}
+#about_banner .about_bn h1 {
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+#about_banner .about_bn .about_text {
+  padding-top: 40px;
+  display: flex;
+  position: relative;
+}
+#about_banner .about_bn .about_text a {
+  text-transform: capitalize;
+  color: #ffffff;
+  font-size: 16px;
+  padding-right: 20px;
+  font-weight: 600;
+  transition: all linear 0.3s;
+}
+#about_banner .about_bn .about_text a:hover {
+  color: #ff7c08;
+}
+#about_banner .about_bn .about_text span {
+  color: #ff7c08;
+  font-size: 16px;
+  font-weight: 600;
+}
+#about_banner .about_bn .about_text::after {
+  position: absolute;
+  content: "";
+  top: 53px;
+  left: 73px;
+  width: 8px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+#about_company {
+  padding: 100px 0;
+}
+#about_company .company_left {
+  position: relative;
+}
+#about_company .company_left .about_img {
+  overflow: hidden;
+  width: 500px;
+  height: 500px;
+  border-radius: 0px 100px 100px 0px;
+  border: 10px solid #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.15) 0px 7px 29px 0px;
+}
+#about_company .company_left h3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #ff7c08;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  line-height: 30px;
+  align-items: center;
+  justify-content: center;
+  font-size: 52px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  text-transform: capitalize;
+  border: 5px solid #ffffff;
+}
+#about_company .company_left h3 span {
+  margin-top: 10px;
+  display: block;
+  color: #ffffff;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+#about_company .company_left p {
+  position: absolute;
+  background: #231f40;
+  color: #ffffff;
+  width: 350px;
+  padding: 20px;
+  bottom: 20px;
+  right: 0;
+  border: 5px solid #ffffff;
+  border-radius: 40px 0px 40px 0px;
+}
+#about_company .company_left p span {
+  display: block;
+  color: #ff7c08;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: right;
+  font-family: "Oleo Script", cursive;
+  margin-left: 15px;
+}
+#about_company .company_right ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+#about_company .company_right ul li {
+  position: relative;
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #231f40;
+  padding-left: 85px;
+  position: relative;
+  margin-bottom: 35px;
+}
+#about_company .company_right ul li:last-child {
+  margin-bottom: 0;
+}
+#about_company .company_right ul li h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#about_company .company_right ul li::after {
+  position: absolute;
+  content: "";
+  background: url(../images/about/about_check.png) no-repeat center/cover;
+  top: 35%;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}/*# sourceMappingURL=about.css.map */
