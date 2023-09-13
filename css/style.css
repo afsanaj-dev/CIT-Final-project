@@ -9,7 +9,6 @@ a {
 }
 
 p, a, span {
-  font-size: 16px;
   font-weight: 400;
   color: #484747;
 }
@@ -170,6 +169,178 @@ button {
 #cartModal .size_wrap {
   display: flex;
   flex-direction: column;
+}
+
+.page_no {
+  background-color: transparent;
+}
+.page_no ul {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.page_no ul li {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  line-height: 50px;
+  text-align: center;
+  font-size: 16px;
+  background: #ffffff;
+  color: #484747;
+  border-radius: 50%;
+  box-shadow: rgba(100, 100, 111, 0.15) 0px 7px 29px 0px;
+  border: solid 1px #dee2e6;
+}
+.page_no ul li:hover {
+  background: #ff7c08;
+}
+.page_no ul li:hover a {
+  color: #ffffff;
+}
+.page_no .menu_page_no {
+  background-color: #EEF6EB;
+}
+
+#about_banner {
+  padding: 200px 0 130px 0;
+  background: linear-gradient(rgba(35, 31, 64, 0.768627451), rgba(35, 31, 64, 0.64)), url(../images/about/breadcrumb_bg.jpg) no-repeat center/cover;
+}
+#about_banner .about_bn h1 {
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+#about_banner .about_bn .about_text {
+  padding-top: 40px;
+  display: flex;
+  position: relative;
+}
+#about_banner .about_bn .about_text a {
+  text-transform: capitalize;
+  color: #ffffff;
+  font-size: 16px;
+  padding-right: 20px;
+  font-weight: 600;
+  transition: all linear 0.3s;
+}
+#about_banner .about_bn .about_text a:hover {
+  color: #ff7c08;
+}
+#about_banner .about_bn .about_text span {
+  color: #ff7c08;
+  font-size: 16px;
+  font-weight: 600;
+}
+#about_banner .about_bn .about_text::after {
+  position: absolute;
+  content: "";
+  top: 53px;
+  left: 73px;
+  width: 8px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+#about_company {
+  padding: 100px 0;
+}
+#about_company .company_left {
+  position: relative;
+}
+#about_company .company_left .about_img {
+  overflow: hidden;
+  width: 500px;
+  height: 500px;
+  border-radius: 0px 100px 100px 0px;
+  border: 10px solid #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.15) 0px 7px 29px 0px;
+}
+#about_company .company_left h3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #ff7c08;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  line-height: 30px;
+  align-items: center;
+  justify-content: center;
+  font-size: 52px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  text-transform: capitalize;
+  border: 5px solid #ffffff;
+}
+#about_company .company_left h3 span {
+  margin-top: 10px;
+  display: block;
+  color: #ffffff;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+#about_company .company_left p {
+  position: absolute;
+  background: #231f40;
+  color: #ffffff;
+  width: 350px;
+  padding: 20px;
+  bottom: 20px;
+  right: 0;
+  border: 5px solid #ffffff;
+  border-radius: 40px 0px 40px 0px;
+}
+#about_company .company_left p span {
+  display: block;
+  color: #ff7c08;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: right;
+  font-family: "Oleo Script", cursive;
+  margin-left: 15px;
+}
+#about_company .company_right ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+#about_company .company_right ul li {
+  position: relative;
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #231f40;
+  padding-left: 85px;
+  position: relative;
+  margin-bottom: 35px;
+}
+#about_company .company_right ul li:last-child {
+  margin-bottom: 0;
+}
+#about_company .company_right ul li h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#about_company .company_right ul li::after {
+  position: absolute;
+  content: "";
+  background: url(../images/about/about_check.png) no-repeat center/cover;
+  top: 35%;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
 }
 
 header {
@@ -1160,7 +1331,7 @@ nav .menu_icon li a:hover i {
   padding: 100px 0;
   background: url(../images/home/testimonial_bg.jpg) no-repeat center/cover;
   position: relative;
-  z-index: -2;
+  z-index: 0;
 }
 #testimonial .testimonial_btn {
   position: absolute;

@@ -1,6 +1,6 @@
 // ============Common CSS Starts========
 
-@import 'root','about';
+@import 'root','about','menu';
 
 
 // ----------------------------------------
@@ -1054,8 +1054,8 @@ nav{
 #testimonial{
     padding: 100px 0;
     background: url(../images/home/testimonial_bg.jpg) no-repeat center/cover;
-    position: relative;
-    z-index: -2;
+    position: relative;  
+    z-index: 0;
     .testimonial_btn{
         position: absolute;
         top: 140px;
