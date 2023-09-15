@@ -31,7 +31,7 @@
     //     });
     // }
 
-    })
+    });
     
     
 //=======OFFER ITEM SLIDER======
@@ -97,6 +97,7 @@ $('.offer_item_wrap').slick({
       }
     ]
   });
+
   // =========Testimonial========
   $('.testimonial_wrap').slick({
     slidesToShow: 2,
@@ -115,32 +116,35 @@ $('.offer_item_wrap').slick({
       }
     ]
   });
-  // =========Counter_up============
-  $(function(){
-    $('.counter').counterUp({
-        delay: 10,
-        time: 2000  
-    });
-})
+  
 // ==========BLOG==========
 $('.blog_wrap').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  arrows: true,
-  prevArrow: ".left_btn",
-  nextArrow: ".right_btn",
-  responsive: [
-    {
-      breakpoint: 575,
-      settings: {
-        slidesToShow: 1,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: true,
+    prevArrow: ".left_btn",
+    nextArrow: ".right_btn",
+    responsive: [
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+        }
       }
-    }
-  ]
-});
-// ==============WOW ============
-$(function(){
-  new WOW().init();
-})
+    ]
+  });
+    // =========Counter_up============
+    $(function(){
+      $('.counter').counterUp({
+          delay: 10,
+          time: 2000  
+      });
+  });
+  
+  // ==============WOW ============
+  $(function(){
+    new WOW().init();
+  }) ;
+

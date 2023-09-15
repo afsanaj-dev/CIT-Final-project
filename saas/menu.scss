@@ -1,9 +1,45 @@
 // ============MENU_SEARCH CSS Starts========
+@import 'root';
+
 #menu_search{
-    margin: 100px 0;
+    padding: 100px 0;
+    .menu_search{
+        form{
+            margin-top: 20px;
+            background: $colorWhite;
+            padding: 10px;
+            border-radius: 80px;
+            position: relative;
+            input{
+                border-radius: 30px;
+                border-color: #ddd;
+                padding: 17px 25px;
+                width: 100%;
+                border: 1px solid #eee;
+
+            }
+            button{
+                position: absolute;
+                top: 16px;
+                right: 16px;
+                &:hover{
+                    background-color: $darkblue;
+                    color: $colorWhite;
+                    padding-left: 50px;
+                    padding-right: 30px;
+                }
+                &:hover::after{
+                    opacity: 1;
+                    left: 10px;
+                }
+            }
+        }
+    }
+
 }
 // ============MENU_SEARCH CSS Ends========
 // ============MENU_SEARCH CSS Starts========
+
 // ============MENU_SEARCH CSS Ends========
 // ============MENU_SEARCH CSS Starts========
 // ============MENU_SEARCH CSS Ends========

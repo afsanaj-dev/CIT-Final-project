@@ -1,6 +1,6 @@
 // ============Common CSS Starts========
 
-@import 'root','about','menu';
+@import 'root','about','menu','contact';
 
 
 // ----------------------------------------
@@ -1069,7 +1069,7 @@ nav{
         z-index: 99;
       }
 
-    .testimonial_wrap{
+    .testimonial_wrap,.about_testimonial{
         .testimonial_item{
             margin-top: 105px;
             position: relative;
@@ -1229,6 +1229,8 @@ nav{
         z-index: 2;
     }
     .blog_wrap{
+        display: flex;
+        gap: 10px;
         .blog_item{
             max-width: 350px;
             padding: 10px;

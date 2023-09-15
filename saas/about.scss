@@ -1,4 +1,4 @@
-// @import 'root','style';
+@import 'root';
 // ---------------------------------------------------
 // |                    ABOUT PAGE CSS               |
 // ---------------------------------------------------
@@ -123,14 +123,12 @@
                 color: $darkblue;
                 padding-left: 85px;
                 position: relative;
-                margin-bottom: 35px;
                 &:last-child{
                     margin-bottom: 0;
                 }
                 h4 {
                     font-size: 20px;
                     font-weight: $fontBold;
-                    margin-bottom: 20px;
                 }
                 &::after{
                     position: absolute;
@@ -149,7 +147,214 @@
 }
 // ============About_COMPANY CSS Ends========
 
-// ============About Banner CSS Starts========
-// ============About Banner CSS Ends========
+// ============About VISION CSS Starts========
+#vision{
+    background: url(../images/about/mission_bg.png) no-repeat center/cover;
+    .vision_text{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                text-align: center;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                margin-top: 30px;
+                background: $colorWhite;
+                background: $darkblue;
+                padding: 20px;
+                border-radius: 10px;
+                border: 1px solid #eee;
+                position: relative;
+                &:nth-child(2){
+                    left: 100px;
+                }
+                &:last-child(){
+                    margin-bottom: 0;
+                }
+                .icon{
+                    border: 2px solid $colorPrimary;
+                    background: $colorPrimary;
+                    font-size: 25px;
+                    margin-right: 30px;
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+                    border-radius: 10px;
+                    text-align: center;
+                    color: $colorWhite;
+                    transform: rotate(45deg);
+                    i{
+                        transform: rotate(-45deg);
+                    }
+
+                }
+                .text{
+                    max-width: 80%;
+                    h4{
+                        text-align: left;
+                        font-size: 24px;
+                        font-weight: $fontBold;
+                        margin-bottom: 20px;
+                        text-transform: capitalize;
+                        color: $colorWhite;
+                    }
+                    p{
+                        text-align: left;
+                        color: $colorWhite;
+                    }
+                }
+            }
+        }
+    }
+}
+// ============About VISION CSS Ends========
+// ============About CHOOSE_US CSS Starts========
+#choose_us{
+    padding: 100px 0;
+    .about_choose_text{
+        p {
+            margin-bottom: 5px;
+        }
+        .about_choose_text_box{
+            padding: 20px 20px 20px 55px;
+            background: #f1f0fa;
+            margin-top: 25px;
+            border-left: 3px solid $colorPrimary;
+            border-radius: 10px;
+            transform: skewX(-10deg);
+            position: relative;
+            margin-left: 28px;
+            span{
+                display: block;
+                background: $colorPrimary;
+                font-size: 25px;
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                border-radius: 50%;
+                text-align: center;
+                color: $colorWhite;
+                margin-bottom: 10px;
+                position: absolute;
+                top: 50%;
+                left: -32px;
+                transform: translateY(-50%) skewX(10deg);
+            }
+            h4{
+                text-align: left;
+                font-size: 20px;
+                font-weight: $fontBold;
+                margin-bottom: 10px;
+                transform: skewX(10deg);
+            }
+            p{
+                transform: skewX(10deg);
+            }
+        }
+    }
+    .about_choose_img{
+        overflow: hidden;
+    }
+}
+// ============About CHOOSE_US CSS Ends========
+
+// ============TESTIMONIAL CSS Starts========
+// #testimonial{
+//     padding: 100px 0;
+//     background: url(../images/home/testimonial_bg.jpg) no-repeat center/cover;
+//     position: relative;  
+//     z-index: 0;
+//     .testimonial_btn{
+//         position: absolute;
+//         top: 140px;
+//         right: 0px;
+//         display: flex;
+//         gap: 10px;
+//         transform: translateX(82%);
+//         z-index: 2;
+//     }
+//     .slick-initialized .slick-slider{
+//         z-index: 99;
+//       }
+
+//     .about_testimonial{
+//         .testimonial_item{
+//             margin-top: 105px;
+//             position: relative;
+//             padding: 15px 0px 15px 15px;
+//             display: flex;
+//             flex-wrap: wrap;
+//             justify-content: center;
+//             &::after{
+//                 position: absolute;
+//                 content: "";
+//                 background: $colorPrimary;
+//                 width: 50%;
+//                 height: 100%;
+//                 bottom: 0;
+//                 left: 0;
+//                 z-index: -1;
+//                 border-radius: 25px;
+//             }
+//             .testimonial_img{
+//                 width: 150px;
+//                 height: 150px;
+//                 border: 5px solid $colorWhite;
+//                 box-shadow: $boxShadow;
+//                 border-radius: 50%;
+//                 overflow: hidden;
+//                 margin-left: 0;
+//                 position: absolute;
+//                 z-index: 20;
+//                 top: -80px;
+//             }
+//             .testimonial_text {
+//                 background: $darkblue;
+//                 padding: 90px 20px 30px 10px;
+//                 border-radius: 25px;
+//                 position: relative;
+//                 text-align: center;
+//                 h4{
+//                     color: $colorWhite;
+//                     font-size: 30px;
+//                     font-weight: $fontBold;
+//                     text-transform: capitalize;
+//                     margin-bottom: 5px;
+//                     position: relative;
+//                     &::after,&::before{
+//                         position: absolute;
+//                         content: "";
+//                         background: url(../images/home/testi_quot.png) no-repeat center/cover;
+//                         background-size: contain;
+//                         width: 40px;
+//                         height: 40px;
+//                         top: 0px;
+//                         left: 15px;
+//                         z-index: 1;
+//                     }
+//                     &::before{
+//                         transform: rotate(180deg);
+//                         left: auto;
+//                         right: 15px;
+//                     }
+//                 }
+//                 .designation {
+//                     padding-top: 20px;
+//                     color: $colorWhite;
+//                     font-size: $paraFSize;
+//                     text-transform: uppercase;
+//                 }
+//                 .feedback {
+//                     max-width: 490px;
+//                     color: #e7e5e5;
+//                     margin: 20px 0px 25px 0px;
+//                 }
+//             }
+//         }
+//     }
+// }
+// ============TESTIMONIAL CSS Ends========
+
 
 // 
