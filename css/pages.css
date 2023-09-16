@@ -204,35 +204,133 @@ button {
   background-color: #EEF6EB;
 }
 
-#menu_search {
+#sign {
   padding: 100px 0;
+  background: #EEF6EB;
 }
-#menu_search .menu_search form {
-  margin-top: 20px;
+#sign .login_area {
   background: #ffffff;
-  padding: 10px;
-  border-radius: 80px;
+  padding: 50px;
+  overflow: hidden;
+  border-radius: 10px;
   position: relative;
+  left: -25px;
+  box-shadow: rgba(100, 100, 111, 0.15) 0px 7px 29px 0px;
 }
-#menu_search .menu_search form input {
+#sign .login_area h2 {
+  font-weight: 700;
+  font-size: 35px;
+  color: #231f40;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  text-align: center;
+}
+#sign .login_area p {
+  color: #231f40;
+  margin-bottom: 25px;
+  text-align: center;
+}
+#sign .login_area a {
+  color: #ff7c08;
+}
+#sign .login_area form .login_input {
+  margin-bottom: 20px;
+}
+#sign .login_area form .login_input input, #sign .login_area form .login_input textarea {
   border-radius: 30px;
-  border-color: #ddd;
-  padding: 17px 25px;
   width: 100%;
+  padding: 12px 20px;
+  outline: none;
+  resize: none;
   border: 1px solid #eee;
+  font-size: 16px;
+  font-weight: 300;
 }
-#menu_search .menu_search form button {
+#sign .login_area form .login_input button {
+  width: 100%;
+  text-align: center;
+  padding: 10px 25px !important;
+}
+#sign .login_area form .login_input .form-check input {
+  padding: 0px;
+  border: 1px solid #ff7c08;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+#sign .login_area form .login_input .form-check input:checked {
+  background-color: #ff7c08;
+  border-color: #ff7c08;
+}
+#sign .login_area form .login_input .form-check label {
+  color: #484747;
+  margin: 0px;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 1px;
+}
+#sign .login_area form .login_input a {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ff7c08;
+  transition: all linear 0.3s;
+}
+#sign .login_area form .login_input a:hover {
+  color: #231f40;
+}
+#sign .login_area .or {
+  position: relative;
+  margin: 20px 0px 30px;
+}
+#sign .login_area .or span {
+  text-transform: uppercase;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background: #ff7c08;
+  background: #f3f7fb;
+  font-size: 12px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 29px;
+  color: #ff7c08;
+  border: 1px solid #ff7c08;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+#sign .login_area .or::after {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  content: "";
+  background: #ff7c08;
+  width: 98%;
+  height: 1px;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
 }
-#menu_search .menu_search form button:hover {
-  background-color: #231f40;
+#sign .login_area ul {
+  display: flex;
+  justify-content: center;
+}
+#sign .login_area ul li {
+  width: 35px;
+  height: 35px;
+  background: #ff7c08;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  margin-right: 5px;
+  font-size: 14px;
+  border: 1px solid transparent;
+  transition: all linear 0.3s;
+}
+#sign .login_area ul li a {
   color: #ffffff;
-  padding-left: 50px;
-  padding-right: 30px;
 }
-#menu_search .menu_search form button:hover::after {
-  opacity: 1;
-  left: 10px;
-}/*# sourceMappingURL=menu.css.map */
+#sign .login_area ul li:hover {
+  background-color: #231f40;
+}/*# sourceMappingURL=pages.css.map */

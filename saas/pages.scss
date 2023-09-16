@@ -1,0 +1,207 @@
+@import 'root';
+
+// ----------------------------------------
+//          CART VIEW PAGE CSS STARTS   
+// ---------------------------------------
+
+// ----------------------------------------
+//          CART VIEW PAGE CSS ENDS   
+// ---------------------------------------
+// ----------------------------------------
+//          CHECKOUT PAGE CSS STARTS   
+// ---------------------------------------
+
+// ----------------------------------------
+//          CHECKOUT PAGE CSS ENDS   
+// ---------------------------------------
+// ----------------------------------------
+//          PAYMENT PAGE CSS STARTS   
+// ---------------------------------------
+
+// ----------------------------------------
+//          PAYMENT PAGE CSS ENDS   
+// ---------------------------------------
+// ----------------------------------------
+//          TESTIMONIAL PAGE CSS STARTS   
+// ---------------------------------------
+
+// ----------------------------------------
+//          TESTIMONIAL PAGE CSS ENDS   
+// ---------------------------------------
+// ----------------------------------------
+//          HOME PAGE CSS STARTS   
+// ---------------------------------------
+
+// ----------------------------------------
+//          404/error PAGE CSS ENDS   
+// ---------------------------------------
+// ----------------------------------------
+//          404/error PAGE CSS STARTS   
+// ---------------------------------------
+
+// ----------------------------------------
+//          FAQs PAGE CSS ENDS   
+// ---------------------------------------
+// ----------------------------------------
+//          FAQs PAGE CSS STARTS   
+// ---------------------------------------
+
+// ----------------------------------------
+//          SIGN_IN PAGE CSS ENDS   
+// ---------------------------------------
+
+// ----------------------------------------
+//          SIGN_IN PAGE CSS STARTS   
+// ---------------------------------------
+#sign{
+    padding: 100px 0;
+    background: #EEF6EB;
+    .login_area{
+        background: $colorWhite;
+        padding: 50px;
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+        left: -25px;
+        box-shadow: $boxShadow;
+        h2{
+            font-weight: $fontBold;
+            font-size: 35px;
+            color: $darkblue;
+            text-transform: capitalize;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        p{
+            color: $darkblue;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        a{
+            color: $colorPrimary;
+        }
+        form{
+            .login_input{
+                margin-bottom: 20px;
+                input,textarea{
+                    border-radius: 30px;
+                    width: 100%;
+                    padding: 12px 20px;
+                    outline: none;
+                    resize: none;
+                    border: 1px solid #eee;
+                    font-size: 16px;
+                    font-weight: 300;
+                }
+                button {
+                    width: 100%;
+                    text-align: center;
+                    padding: 10px 25px !important;
+                }
+                .form-check{
+                    input {
+                        padding: 0px;
+                        border: 1px solid $colorPrimary;
+                        border-radius: 50%;
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 10px;
+                        &:checked{
+                            background-color: $colorPrimary;
+                            border-color: $colorPrimary;
+                        }
+                    }
+                    label {
+                        color: $paraColor;
+                        margin: 0px;
+                        text-transform: capitalize;
+                        font-size: 16px;
+                        font-weight: $fontNormal;
+                        margin-top: 1px;
+                    }
+                }
+                a{
+                    text-transform: capitalize;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $colorPrimary;
+                    transition: $sec3;
+                    &:hover{
+                        color: $darkblue;
+                    }
+                }
+            }
+        }
+        .or{
+            position: relative;
+            margin: 20px 0px 30px;
+            span{
+                text-transform: uppercase;
+                width: 30px;
+                height: 30px;
+                display: inline-block;
+                background: $colorPrimary;
+                background: #f3f7fb;
+                font-size: 12px;
+                font-weight: 800;
+                text-align: center;
+                line-height: 29px;
+                color: $colorPrimary;
+                border: 1px solid $colorPrimary;
+                border-radius: 50%;
+                position: relative;
+                z-index: 1;
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                background: $colorPrimary;
+                width: 98%;
+                height: 1px;
+                top: 50%;
+                right: 0px;
+                transform: translateY(-50%);
+            }
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            li{
+                width: 35px;
+                height: 35px;
+                background: $colorPrimary;
+                text-align: center;
+                line-height: 35px;
+                border-radius: 50%;
+                margin-right: 5px;
+                font-size: 14px;
+                border: 1px solid transparent;
+                transition: $sec3;
+                a{
+                    color: $colorWhite;
+                }
+                &:hover{
+                    background-color: $darkblue;
+                }
+            }
+        }
+    }
+}
+// ----------------------------------------
+//          SIGN_UP PAGE CSS ENDS   
+// ---------------------------------------
+// ----------------------------------------
+//          SIGN_UP PAGE CSS ENDS   
+// ---------------------------------------
+// ----------------------------------------
+//          FORGOT PASSWORD PAGE CSS ENDS   
+// ---------------------------------------
+// ----------------------------------------
+//          FORGOT PASSWORD PAGE CSS ENDS   
+// ---------------------------------------
+// ----------------------------------------
+//          PRIVACY POLICY PAGE CSS ENDS   
+// ---------------------------------------
+// ----------------------------------------
+//          PRIVACY POLICY PAGE CSS ENDS   
+// ---------------------------------------
